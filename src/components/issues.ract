@@ -1,0 +1,13 @@
+<section>
+  <ul>
+    {{#if loading}}
+      <li>loading..</li>
+    {{else}}
+      {{#issue.items:i}}
+      <li>
+      {{title}}
+      </li>
+      {{/issue}}  
+    {{/if}}
+  </ul>
+</section>

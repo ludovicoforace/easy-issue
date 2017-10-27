@@ -1,0 +1,31 @@
+<div class="pend">
+  <h1 class="title">Customer Support Issue Tracker</h1>
+  <div id="widget">
+    <header>
+      <ul>
+        {{#head:i}}
+        <li on-click='active:{{i}}' class='{{ i === activate ? "activate" : "" }}'>{{this}}</li>
+        {{/head}}
+      </ul>
+    </header>
+
+    <div id="content">
+      {{#if activate === 0}}
+      <Issues 
+        loading={{loading}}
+        issue={{issue}} 
+      />
+      {{/if}} 
+      {{#if activate === 1}}
+      <Issues 
+        loading={{loading}}
+        issue={{issue}} 
+      />
+      {{/if}}
+    </div>
+
+    <footer>
+      <p>Issue Tracker</p>
+    </footer>
+  </div>
+</div>

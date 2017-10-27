@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+@bg: #fafafa;
+@base: #00b569;
+@black: #555;
+@white: #fff;
+
+#root {
+  font-family: 'Lato', sans-serif;
+}
+
+#widget {
+  background-color: @base;
+  border: 1px solid @base;
+  border-radius: 6px;
+}
+
+a {
+  color: @base;
+}
+
+.pend {
+  width: 1060px;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  color: @black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.desc {
+  font-size: 26px;
+  line-height: 34px;
+  color: @black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header {
+  li {
+    display: inline-block;
+    cursor: pointer;
+    color: @white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  .activate {
+    color: lighten(@base, 15%);
+  }
+}
+
+#content {
+  background-color: @bg;
+  color: @black;
+  padding: 20px;
+
+  .logo-credits {
+    font-size: 16px;
+    line-height: 24px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    a {
+      color: @black;
+    }
+  }
+}
+
+footer {
+  text-align: right;
+
+  p {
+    color: @white;
+    font-size: 16px;
+    line-height: normal;
+    padding: 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .pend {
+    width: 100%;
+  }
+}
