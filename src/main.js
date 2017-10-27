@@ -15,7 +15,8 @@ const Main = new Ractive({
     loading: true,
     head: [
       'Open issues',
-      'Closed issues'
+      'Closed issues',
+      'All issues'
     ],
     issue: []
   },
@@ -45,6 +46,10 @@ const Main = new Ractive({
         this.set('loading', true);
         fetchIssue('+state:closed');
         break;
+      case 2:
+        this.set('loading', true);
+        fetchIssue('');
+        break;
     }
     this.on('active', (evt, i) => {
       this.set('activate', i);
@@ -56,6 +61,10 @@ const Main = new Ractive({
         case 1:
           this.set('loading', true);
           this.set('issue', fetchIssue('+state:closed'));
+          break;
+        case 2:
+          this.set('loading', true);
+          this.set('issue', fetchIssue(''));
           break;
       }
     });

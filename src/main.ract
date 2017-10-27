@@ -9,14 +9,17 @@
       </ul>
     </header>
 
-    <div id="content">
+    <main>
       {{#activate === 0}}
       <Issues />
       {{/if}} 
       {{#activate === 1}}
       <Issues />
       {{/if}}
-    </div>
+      {{#activate === 2}}
+      <Issues />
+      {{/if}}
+    </main>
 
     <footer>
       <p>Issue Tracker</p>

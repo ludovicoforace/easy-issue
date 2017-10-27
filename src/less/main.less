@@ -69,7 +69,9 @@ header {
   }
 }
 
-#content {
+main {
+  height: 386px;
+  overflow-y: auto;
   background-color: @bg;
   color: @black;
 
@@ -92,22 +94,15 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     a {
-      display: inline-block;
+      display: block;
       color: @black;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 10px 20px;
+      padding: 12px 20px;
       width: 100%;
       font-size: 22px;
-
-      &:hover {
-        color: @white;
-      }
     }
 
     &:hover {
-      background-color: @base;
+      background-color: rgba(0, 0, 0, 0.1);
     }
 
     &:last-child a {

@@ -7,7 +7,7 @@
       <li class="loading">loading..</li>
     {{else}}
     {{#filtered}}
-      <li><a href='{{url}}' target="_blank">{{title}}</a></li>
+      <li><a class="ellipsis" href='{{url}}' target="_blank">{{title}}</a></li>
     {{/filtered}}
     {{/if}}
   </ul>
