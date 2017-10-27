@@ -1,13 +1,16 @@
 <section>
+  <div class="cool-input">
+    <input type="text" placeholder="search an issue" value={{filter}} />
+  </div>
   <ul>
     {{#if loading}}
       <li>loading..</li>
     {{else}}
-      {{#issue.items:i}}
+    {{# filtered }}
       <li>
-      {{title}}
+      {{this}}
       </li>
-      {{/issue}}  
+    {{/ }}
     {{/if}}
   </ul>
 </section>
