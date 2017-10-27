@@ -26,6 +26,7 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
+    "moment": "^2.19.1",
     "ractive": "~0.7.3",
     "sash-layout": "^1.2.11",
     "then-request": "^4.1.0"

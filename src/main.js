@@ -1,6 +1,7 @@
 import Ractive from 'ractive';
 import template from './main.ract';
 import request from 'then-request';
+import moment from 'moment';
 
 import issues from './components/issues.js';
 
@@ -18,7 +19,11 @@ const Main = new Ractive({
       'Closed issues',
       'All issues'
     ],
-    issue: []
+    issue: [],
+    filter: ''
+  },
+  computed: {
+    year: moment().format('YYYY')
   },
   oninit() {
     const self = this;

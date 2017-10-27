@@ -1,7 +1,4 @@
 <section>
-  <div class="cool-input">
-    <input type="text" placeholder="search an issue" value={{filter}} />
-  </div>
   <ul>
     {{#if loading}}
       <li class="loading">loading..</li>

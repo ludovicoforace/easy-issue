@@ -7,6 +7,9 @@
         <li on-click='active:{{i}}' class='{{ i === activate ? "activate" : "" }}'>{{this}}</li>
         {{/head}}
       </ul>
+      <div class="cool-input">
+        <input type="text" placeholder="search an issue" value={{filter}} />
+      </div>
     </header>
 
     <main>
@@ -25,4 +28,5 @@
       <p>Issue Tracker</p>
     </footer>
   </div>
+  <p class="author">Copyright &copy; {{year}} <a href="https://ludovicoforace.github.io/self/" target="_blank">Ludovico Forace</a></p>
 </div>

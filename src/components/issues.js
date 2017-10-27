@@ -3,9 +3,6 @@ import template from './issues.ract';
 
 export default Ractive.extend({
   template: template.template,
-  data: () => ({
-    filter: ''
-  }),
   computed: {
     filtered: function () {
       if(this.get('loading') === false) {
