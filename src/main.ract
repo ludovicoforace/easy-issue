@@ -10,17 +10,11 @@
     </header>
 
     <div id="content">
-      {{#if activate === 0}}
-      <Issues 
-        loading={{loading}}
-        issue={{issue}} 
-      />
+      {{#activate === 0}}
+      <Issues />
       {{/if}} 
-      {{#if activate === 1}}
-      <Issues 
-        loading={{loading}}
-        issue={{issue}} 
-      />
+      {{#activate === 1}}
+      <Issues />
       {{/if}}
     </div>
 

@@ -28,7 +28,6 @@ const Main = new Ractive({
         const data = JSON.parse(res.getBody());
         self.set('issue', data);
         self.set('loading', false);
-        console.log(self.get('issue'));
       })
       .catch((err) => {
         alert(err);
