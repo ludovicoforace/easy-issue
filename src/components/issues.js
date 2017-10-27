@@ -8,13 +8,12 @@ export default Ractive.extend({
   }),
   computed: {
     filtered: function () {
-      const title = this.get('issue').items.map(item => item.title);
+      const title = this.get('issue').items.map(item => ({
+        title: item.title,
+        url: item.html_url
+      }));
       const filter = this.get('filter').toLowerCase();
-      return title.filter(function (entry) {
-        return !filter || entry.toString().toLowerCase().indexOf(filter) !== -1;
-      });
+      return title.filter(entry => !filter || entry.title.toString().toLowerCase().indexOf(filter) !== -1);
     }
-  },
-  oninit() {
   }
 });

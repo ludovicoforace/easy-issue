@@ -6,11 +6,9 @@
     {{#if loading}}
       <li>loading..</li>
     {{else}}
-    {{# filtered }}
-      <li>
-      {{this}}
-      </li>
-    {{/ }}
+    {{#filtered}}
+      <li><a href='{{url}}' target="_blank">{{title}}</a></li>
+    {{/filtered}}
     {{/if}}
   </ul>
 </section>
