@@ -4,7 +4,7 @@
   </div>
   <ul>
     {{#if loading}}
-      <li>loading..</li>
+      <li class="loading">loading..</li>
     {{else}}
     {{#filtered}}
       <li><a href='{{url}}' target="_blank">{{title}}</a></li>
